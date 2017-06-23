@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C7DD9481DE9CA4D002F92C5 /* CameraContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7DD9471DE9CA4D002F92C5 /* CameraContainerView.m */; };
+		A2090C661DA58354000A0375 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = A2090C611DA58354000A0375 /* NSDictionary+Json.m */; };
+		A2090C681DA58354000A0375 /* WebRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2090C651DA58354000A0375 /* WebRTCClient.m */; };
+		A2090C6E1DA58C48000A0375 /* RTCPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = A2090C6D1DA58C48000A0375 /* RTCPeer.m */; };
+		A2848A341DA23CFF003F86C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2848A331DA23CFF003F86C8 /* main.m */; };
+		A2848A371DA23CFF003F86C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2848A361DA23CFF003F86C8 /* AppDelegate.m */; };
+		A2848A3A1DA23CFF003F86C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2848A391DA23CFF003F86C8 /* ViewController.m */; };
+		A2848A3D1DA23CFF003F86C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2848A3B1DA23CFF003F86C8 /* Main.storyboard */; };
+		A2848A401DA23CFF003F86C8 /* Kurento_Client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2848A3E1DA23CFF003F86C8 /* Kurento_Client.xcdatamodeld */; };
+		A2848A421DA23CFF003F86C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2848A411DA23CFF003F86C8 /* Assets.xcassets */; };
+		A2848A451DA23CFF003F86C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2848A431DA23CFF003F86C8 /* LaunchScreen.storyboard */; };
+		A2863A3B1DA2A89900769643 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A3A1DA2A89900769643 /* libicucore.tbd */; };
+		A2863A3D1DA2A8A300769643 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A3C1DA2A8A300769643 /* libstdc++.tbd */; };
+		A2863A3F1DA2A8B500769643 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A3E1DA2A8B500769643 /* libc.tbd */; };
+		A2863A411DA2A8BF00769643 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A401DA2A8BF00769643 /* libsqlite3.tbd */; };
+		A2863A431DA2A8C800769643 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A421DA2A8C800769643 /* AVFoundation.framework */; };
+		A2863A451DA2A8D200769643 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A441DA2A8D200769643 /* AudioToolbox.framework */; };
+		A2863A471DA2A8DA00769643 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A461DA2A8DA00769643 /* CoreGraphics.framework */; };
+		A2863A491DA2A8E100769643 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A481DA2A8E100769643 /* CoreMedia.framework */; };
+		A2863A4B1DA2A8E900769643 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A4A1DA2A8E900769643 /* GLKit.framework */; };
+		A2863A4D1DA2A8F000769643 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A4C1DA2A8F000769643 /* UIKit.framework */; };
+		A2863A4F1DA2A8F800769643 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A4E1DA2A8F800769643 /* VideoToolbox.framework */; };
+		A2863A511DA2A90000769643 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A501DA2A90000769643 /* CFNetwork.framework */; };
+		A2863A531DA2A90700769643 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A521DA2A90700769643 /* Security.framework */; };
+		D4C972F8FF0C7F7E7474E341 /* libPods-Kurento-Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F95A7C347D93A778ECAE7C /* libPods-Kurento-Client.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0CEDDC791DCB98AE00186EC1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C39E38A1DD1CC6A00DC4901 /* Kurento-Client-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Kurento-Client-Prefix.pch"; sourceTree = "<group>"; };
+		0C7DD9461DE9CA4D002F92C5 /* CameraContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraContainerView.h; sourceTree = "<group>"; };
+		0C7DD9471DE9CA4D002F92C5 /* CameraContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraContainerView.m; sourceTree = "<group>"; };
+		83F95A7C347D93A778ECAE7C /* libPods-Kurento-Client.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kurento-Client.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		905361FACA4AC8C6F86FE134 /* Pods-Kurento-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kurento-Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kurento-Client/Pods-Kurento-Client.debug.xcconfig"; sourceTree = "<group>"; };
+		91A542D556D70DCC909E62D2 /* Pods-Kurento-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kurento-Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kurento-Client/Pods-Kurento-Client.release.xcconfig"; sourceTree = "<group>"; };
+		A2090C601DA58354000A0375 /* NSDictionary+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Json.h"; path = "WebRTC/NSDictionary+Json.h"; sourceTree = "<group>"; };
+		A2090C611DA58354000A0375 /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Json.m"; path = "WebRTC/NSDictionary+Json.m"; sourceTree = "<group>"; };
+		A2090C641DA58354000A0375 /* WebRTCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebRTCClient.h; path = WebRTC/WebRTCClient.h; sourceTree = "<group>"; };
+		A2090C651DA58354000A0375 /* WebRTCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebRTCClient.m; path = WebRTC/WebRTCClient.m; sourceTree = "<group>"; };
+		A2090C6D1DA58C48000A0375 /* RTCPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTCPeer.m; path = WebRTC/RTCPeer.m; sourceTree = "<group>"; };
+		A2090C6F1DA58C57000A0375 /* RTCPeer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RTCPeer.h; path = WebRTC/RTCPeer.h; sourceTree = "<group>"; };
+		A2848A2F1DA23CFF003F86C8 /* Kurento-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kurento-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2848A331DA23CFF003F86C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2848A351DA23CFF003F86C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2848A361DA23CFF003F86C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2848A381DA23CFF003F86C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A2848A391DA23CFF003F86C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A2848A3C1DA23CFF003F86C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2848A3F1DA23CFF003F86C8 /* Kurento_Client.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kurento_Client.xcdatamodel; sourceTree = "<group>"; };
+		A2848A411DA23CFF003F86C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2848A441DA23CFF003F86C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2848A461DA23CFF003F86C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2863A3A1DA2A89900769643 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		A2863A3C1DA2A8A300769643 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		A2863A3E1DA2A8B500769643 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		A2863A401DA2A8BF00769643 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A2863A421DA2A8C800769643 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A2863A441DA2A8D200769643 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A2863A461DA2A8DA00769643 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2863A481DA2A8E100769643 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A2863A4A1DA2A8E900769643 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A2863A4C1DA2A8F000769643 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2863A4E1DA2A8F800769643 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		A2863A501DA2A90000769643 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A2863A521DA2A90700769643 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2848A2C1DA23CFF003F86C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2863A531DA2A90700769643 /* Security.framework in Frameworks */,
+				A2863A511DA2A90000769643 /* CFNetwork.framework in Frameworks */,
+				A2863A4F1DA2A8F800769643 /* VideoToolbox.framework in Frameworks */,
+				A2863A4D1DA2A8F000769643 /* UIKit.framework in Frameworks */,
+				A2863A4B1DA2A8E900769643 /* GLKit.framework in Frameworks */,
+				A2863A491DA2A8E100769643 /* CoreMedia.framework in Frameworks */,
+				A2863A471DA2A8DA00769643 /* CoreGraphics.framework in Frameworks */,
+				A2863A451DA2A8D200769643 /* AudioToolbox.framework in Frameworks */,
+				A2863A431DA2A8C800769643 /* AVFoundation.framework in Frameworks */,
+				A2863A411DA2A8BF00769643 /* libsqlite3.tbd in Frameworks */,
+				A2863A3F1DA2A8B500769643 /* libc.tbd in Frameworks */,
+				A2863A3D1DA2A8A300769643 /* libstdc++.tbd in Frameworks */,
+				A2863A3B1DA2A89900769643 /* libicucore.tbd in Frameworks */,
+				D4C972F8FF0C7F7E7474E341 /* libPods-Kurento-Client.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C7DD9441DE9CA21002F92C5 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0C7DD9451DE9CA4D002F92C5 /* Views */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		0C7DD9451DE9CA4D002F92C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C7DD9461DE9CA4D002F92C5 /* CameraContainerView.h */,
+				0C7DD9471DE9CA4D002F92C5 /* CameraContainerView.m */,
+			);
+			name = Views;
+			path = Interface/Views;
+			sourceTree = "<group>";
+		};
+		A184ED7598796FEDE4A2765E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2863A521DA2A90700769643 /* Security.framework */,
+				A2863A501DA2A90000769643 /* CFNetwork.framework */,
+				A2863A4E1DA2A8F800769643 /* VideoToolbox.framework */,
+				A2863A4C1DA2A8F000769643 /* UIKit.framework */,
+				A2863A4A1DA2A8E900769643 /* GLKit.framework */,
+				A2863A481DA2A8E100769643 /* CoreMedia.framework */,
+				A2863A461DA2A8DA00769643 /* CoreGraphics.framework */,
+				A2863A441DA2A8D200769643 /* AudioToolbox.framework */,
+				A2863A421DA2A8C800769643 /* AVFoundation.framework */,
+				A2863A401DA2A8BF00769643 /* libsqlite3.tbd */,
+				A2863A3E1DA2A8B500769643 /* libc.tbd */,
+				A2863A3C1DA2A8A300769643 /* libstdc++.tbd */,
+				A2863A3A1DA2A89900769643 /* libicucore.tbd */,
+				83F95A7C347D93A778ECAE7C /* libPods-Kurento-Client.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2848A261DA23CFE003F86C8 = {
+			isa = PBXGroup;
+			children = (
+				A2848A311DA23CFF003F86C8 /* Kurento-Client */,
+				A2848A301DA23CFF003F86C8 /* Products */,
+				DEECB58E5478801A552559C9 /* Pods */,
+				A184ED7598796FEDE4A2765E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2848A301DA23CFF003F86C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2848A2F1DA23CFF003F86C8 /* Kurento-Client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2848A311DA23CFF003F86C8 /* Kurento-Client */ = {
+			isa = PBXGroup;
+			children = (
+				0C7DD9441DE9CA21002F92C5 /* Interface */,
+				A2863A571DA2AB5A00769643 /* WebRTC */,
+				A2848A351DA23CFF003F86C8 /* AppDelegate.h */,
+				A2848A361DA23CFF003F86C8 /* AppDelegate.m */,
+				A2848A381DA23CFF003F86C8 /* ViewController.h */,
+				A2848A391DA23CFF003F86C8 /* ViewController.m */,
+				A2848A3B1DA23CFF003F86C8 /* Main.storyboard */,
+				A2848A411DA23CFF003F86C8 /* Assets.xcassets */,
+				A2848A431DA23CFF003F86C8 /* LaunchScreen.storyboard */,
+				A2848A461DA23CFF003F86C8 /* Info.plist */,
+				A2848A3E1DA23CFF003F86C8 /* Kurento_Client.xcdatamodeld */,
+				A2848A321DA23CFF003F86C8 /* Supporting Files */,
+			);
+			path = "Kurento-Client";
+			sourceTree = "<group>";
+		};
+		A2848A321DA23CFF003F86C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C39E38A1DD1CC6A00DC4901 /* Kurento-Client-Prefix.pch */,
+				A2848A331DA23CFF003F86C8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2863A571DA2AB5A00769643 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				A2090C601DA58354000A0375 /* NSDictionary+Json.h */,
+				A2090C611DA58354000A0375 /* NSDictionary+Json.m */,
+				A2090C641DA58354000A0375 /* WebRTCClient.h */,
+				A2090C651DA58354000A0375 /* WebRTCClient.m */,
+				A2090C6F1DA58C57000A0375 /* RTCPeer.h */,
+				A2090C6D1DA58C48000A0375 /* RTCPeer.m */,
+			);
+			name = WebRTC;
+			sourceTree = "<group>";
+		};
+		DEECB58E5478801A552559C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				905361FACA4AC8C6F86FE134 /* Pods-Kurento-Client.debug.xcconfig */,
+				91A542D556D70DCC909E62D2 /* Pods-Kurento-Client.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2848A2E1DA23CFF003F86C8 /* Kurento-Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2848A491DA23CFF003F86C8 /* Build configuration list for PBXNativeTarget "Kurento-Client" */;
+			buildPhases = (
+				39349CA899AAD32D87734219 /* [CP] Check Pods Manifest.lock */,
+				A2848A2B1DA23CFF003F86C8 /* Sources */,
+				A2848A2C1DA23CFF003F86C8 /* Frameworks */,
+				A2848A2D1DA23CFF003F86C8 /* Resources */,
+				37317BA4F1646C0FC54AF0DA /* [CP] Embed Pods Frameworks */,
+				6DE0DC7F6C129C760B7256D4 /* [CP] Copy Pods Resources */,
+				0CEDDC791DCB98AE00186EC1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kurento-Client";
+			productName = "Kurento-Client";
+			productReference = A2848A2F1DA23CFF003F86C8 /* Kurento-Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2848A271DA23CFE003F86C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.wangu;
+				TargetAttributes = {
+					A2848A2E1DA23CFF003F86C8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L4Q8Y55JVB;
+					};
+				};
+			};
+			buildConfigurationList = A2848A2A1DA23CFE003F86C8 /* Build configuration list for PBXProject "Kurento-Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2848A261DA23CFE003F86C8;
+			productRefGroup = A2848A301DA23CFF003F86C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2848A2E1DA23CFF003F86C8 /* Kurento-Client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2848A2D1DA23CFF003F86C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2848A451DA23CFF003F86C8 /* LaunchScreen.storyboard in Resources */,
+				A2848A421DA23CFF003F86C8 /* Assets.xcassets in Resources */,
+				A2848A3D1DA23CFF003F86C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37317BA4F1646C0FC54AF0DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kurento-Client/Pods-Kurento-Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39349CA899AAD32D87734219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6DE0DC7F6C129C760B7256D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kurento-Client/Pods-Kurento-Client-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2848A2B1DA23CFF003F86C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2090C661DA58354000A0375 /* NSDictionary+Json.m in Sources */,
+				A2848A3A1DA23CFF003F86C8 /* ViewController.m in Sources */,
+				A2848A401DA23CFF003F86C8 /* Kurento_Client.xcdatamodeld in Sources */,
+				A2848A371DA23CFF003F86C8 /* AppDelegate.m in Sources */,
+				A2848A341DA23CFF003F86C8 /* main.m in Sources */,
+				A2090C6E1DA58C48000A0375 /* RTCPeer.m in Sources */,
+				A2090C681DA58354000A0375 /* WebRTCClient.m in Sources */,
+				0C7DD9481DE9CA4D002F92C5 /* CameraContainerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2848A3B1DA23CFF003F86C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2848A3C1DA23CFF003F86C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2848A431DA23CFF003F86C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2848A441DA23CFF003F86C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2848A471DA23CFF003F86C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2848A481DA23CFF003F86C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2848A4A1DA23CFF003F86C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905361FACA4AC8C6F86FE134 /* Pods-Kurento-Client.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Kurento-Client/Kurento-Client-Prefix.pch";
+				INFOPLIST_FILE = "Kurento-Client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scn.kurento.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "42e24866-c851-4cf1-a923-dffc6cb73302";
+			};
+			name = Debug;
+		};
+		A2848A4B1DA23CFF003F86C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A542D556D70DCC909E62D2 /* Pods-Kurento-Client.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Kurento-Client/Kurento-Client-Prefix.pch";
+				INFOPLIST_FILE = "Kurento-Client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scn.kurento.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "42e24866-c851-4cf1-a923-dffc6cb73302";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2848A2A1DA23CFE003F86C8 /* Build configuration list for PBXProject "Kurento-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2848A471DA23CFF003F86C8 /* Debug */,
+				A2848A481DA23CFF003F86C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2848A491DA23CFF003F86C8 /* Build configuration list for PBXNativeTarget "Kurento-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2848A4A1DA23CFF003F86C8 /* Debug */,
+				A2848A4B1DA23CFF003F86C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2848A3E1DA23CFF003F86C8 /* Kurento_Client.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2848A3F1DA23CFF003F86C8 /* Kurento_Client.xcdatamodel */,
+			);
+			currentVersion = A2848A3F1DA23CFF003F86C8 /* Kurento_Client.xcdatamodel */;
+			path = Kurento_Client.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A2848A271DA23CFE003F86C8 /* Project object */;
+}

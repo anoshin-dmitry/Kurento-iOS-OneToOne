@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSj-Be-xSA">
+                                <rect key="frame" x="230" y="40" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QAN-f7-lX8"/>
+                                    <constraint firstAttribute="width" constant="60" id="aOJ-FU-7lu"/>
+                                </constraints>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7a-jJ-DTM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Bx-5z-gih" userLabel="Remote Container View" customClass="CameraContainerView">
+                                <rect key="frame" x="10" y="80" width="300" height="390"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHi-sf-klR" userLabel="Local Container View" customClass="CameraContainerView">
+                                <rect key="frame" x="230" y="390" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Yb4-ny-l3Q"/>
+                                    <constraint firstAttribute="width" constant="70" id="uNU-O5-HVa"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jc2-0I-RLA">
+                                <rect key="frame" x="20" y="40" width="194" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0ZT-gf-gzD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jSj-Be-xSA" firstAttribute="leading" secondItem="Jc2-0I-RLA" secondAttribute="trailing" constant="20" id="GHD-83-Odc"/>
+                            <constraint firstItem="9Bx-5z-gih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GPZ-Z0-3o4"/>
+                            <constraint firstItem="9Bx-5z-gih" firstAttribute="top" secondItem="Jc2-0I-RLA" secondAttribute="bottom" constant="10" id="JqH-3v-aai"/>
+                            <constraint firstItem="VHi-sf-klR" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-20" id="OKn-dD-EDj"/>
+                            <constraint firstItem="VHi-sf-klR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-20" id="Qxw-70-g01"/>
+                            <constraint firstItem="jSj-Be-xSA" firstAttribute="centerY" secondItem="Jc2-0I-RLA" secondAttribute="centerY" id="UO8-of-cGM"/>
+                            <constraint firstItem="9Bx-5z-gih" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-10" id="V2b-NM-frZ"/>
+                            <constraint firstItem="9Bx-5z-gih" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="fKI-8P-Lja"/>
+                            <constraint firstItem="Jc2-0I-RLA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="kPS-lb-6Ls"/>
+                            <constraint firstItem="Jc2-0I-RLA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="uKX-7y-Dxz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameField" destination="Jc2-0I-RLA" id="JUZ-Vb-g9K"/>
+                        <outlet property="viewLocalContainer" destination="VHi-sf-klR" id="EIS-A1-nS8"/>
+                        <outlet property="viewRemoteContainer" destination="9Bx-5z-gih" id="M2I-Wj-GP6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
